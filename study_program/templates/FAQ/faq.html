@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <!-- message -->
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-{{message.tags}}">{{message}}</div>        
+        {% endfor %}
+    {% endif %}
+    <!-- TITLE -->
+    <div id="professor_profile-container-title" class="container">
+        <br />
+        <div class="col">
+            <div class="row">
+               
+                <div class="col">
+                    <h3 style="color: white;">Frequently Asked Questions</h3>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+
+ 
+
+    <!-- EDUCATION INFO -->
+
+
+    <div class="container bg-light border">
+        <br />
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">What is IQA?</h5>
+                <p class="card-text">It stands for Internal Quality Assurance department which is responsible for assessing the study program, faculties, and college itself.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">What is main the objective of this website?</h5>
+                <p class="card-text">To assist the IQA department regarding to the problems of data organization and work process tracking</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">How do I contact IQA?</h5>
+                <p class="card-text">You can create the report through the inbox system in this website or contact IQA department by this phone number: 02-XXX-XXXX</p>
+            </div>
+        </div>
+
+        <br />
+    </div>
+
+
+ 
+
+
+
+{% endblock %}
