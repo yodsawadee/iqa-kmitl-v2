@@ -12,10 +12,18 @@
         <br />
         <div class="col">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-6">
                     <h1 style="color:white;">Committee Appointment</h1>
                 </div>
-            
+                
+
+                <!--COMMITTEE RECOMMENDATION-->
+                <div class="ml-auto">
+                    <form method="GET" action="{% url 'committee_recommendation' %}">
+                        <button id="committee_appointment-btn" type="submit" class="btn btn-outline-success mr-4">Committee Recommendation</button>
+                    </form>
+                </div>
+
                  <!-- CREATE AVAILABLE DATE -->
                 <div class="ml-auto">
                     <form method="GET" action="{% url 'create_committee_appointment' %}">
