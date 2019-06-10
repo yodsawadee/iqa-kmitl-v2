@@ -748,7 +748,8 @@ def faculty_program_detail(request, program_id):
     for assessment in assessments.all():
         #print("asssessment",assessment.program_id)
         #print("name",detail.name)
-        if(str(assessment.program_id) == detail.name):
+        ae = str(assessment.program_id).split(":")
+        if(str(ae[1][1::]) == detail.name):
             #print("KAO")
             assessment_list.append(assessment)
 
@@ -1015,7 +1016,8 @@ def program_detail(request, program_id):
     for assessment in assessments.all():
         #print("asssessment",assessment.program_id)
         #print("name",detail.name)
-        if(str(assessment.program_id) == detail.name):
+        ae = str(assessment.program_id).split(":")
+        if(str(ae[1][1::]) == detail.name):
             #print("KAO")
             assessment_list.append(assessment)
     

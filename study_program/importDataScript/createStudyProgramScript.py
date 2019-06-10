@@ -1,7 +1,7 @@
 import xlrd
 from study_program.models import StudyProgram
 
-workbook = xlrd.open_workbook('C:/iqa_website_test/IQA-Website-for-KMITL-master/myvenv/Scripts/iqa_web/study_program/importDataScript/data/IQAData.xlsx')
+workbook = xlrd.open_workbook('study_program/importDataScript/data/IQAData.xlsx')
 worksheet = workbook.sheet_by_name('Program (ข้อมูลหลักสูตร)')
 
 
@@ -34,7 +34,7 @@ for i in range(2, worksheet.nrows):
 
 
     st = StudyProgram.objects.create(code = code, program_status = program_status, name = name, collaboration_with_other_institues = collaboration_with_other_institues, degree_and_major = degree_and_major, pdf_docs = pdf_docs, pdf_docs_link = pdf_docs_link)
-    print("aee ok")
+    print("StudyProgram", i)
 
 
 

@@ -1,7 +1,7 @@
 from study_program.models import AssessmentResult, Professor, StudyProgram
 import xlrd
 
-workbook = xlrd.open_workbook('C:/iqa_website_test/IQA-Website-for-KMITL-master/myvenv/Scripts/iqa_web/study_program/importDataScript/data/Revisedv2 Database_ [Assessors Matching & Assesment Scheduling_ An Application for IQA System].xlsx')
+workbook = xlrd.open_workbook('study_program/importDataScript/data/Revisedv2 Database_ [Assessors Matching & Assesment Scheduling_ An Application for IQA System].xlsx')
 worksheet = workbook.sheet_by_name('AssessmentResult (ผลการประเมิน)')
 
 #shell()
@@ -40,4 +40,4 @@ for i in range(2, worksheet.nrows):
 
 
     ar = AssessmentResult.objects.create(code = code, year = year, curriculum_status = curriculum_status, curriculum_status_year = curriculum_status_year, curriculum_standard = curriculum_standard, pdf_docs = pdf_docs, pdf_docs_link = pdf_docs_link, program_id_id = program_id_id)
-    print("aee ok")
+    print("AssessmentResult",i)

@@ -1,7 +1,7 @@
 from study_program.models import AssessmentResult, Professor, StudyProgram, AUN
 import xlrd
 
-workbook = xlrd.open_workbook('C:/iqa_website_test/IQA-Website-for-KMITL-master/myvenv/Scripts/iqa_web/study_program/importDataScript/data/Revisedv2 Database_ [Assessors Matching & Assesment Scheduling_ An Application for IQA System].xlsx')
+workbook = xlrd.open_workbook('study_program/importDataScript/data/Revisedv2 Database_ [Assessors Matching & Assesment Scheduling_ An Application for IQA System].xlsx')
 worksheet = workbook.sheet_by_name('AUN')
 
 #shell()
@@ -52,4 +52,4 @@ for i in range(2, worksheet.nrows):
             assessment_id_id = assessment_id_id
         )
         already_create.append(assessment_id_id)
-        print("aee ok")
+        print("AUN", i)

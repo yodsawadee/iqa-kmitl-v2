@@ -3,7 +3,7 @@ import xlrd
 from study_program.models import Professor
 
 
-workbook = xlrd.open_workbook('C:/iqa_website_test/IQA-Website-for-KMITL-master/myvenv/Scripts/iqa_web/study_program/importDataScript/data/study_program.xlsx')
+workbook = xlrd.open_workbook('study_program/importDataScript/data/study_program.xlsx')
 worksheet = workbook.sheet_by_name('professor')
 
 #shell()
@@ -55,7 +55,7 @@ for i in range(1, worksheet.nrows):
     #conn.commit()
     p = Professor.objects.create(professor_id = professor_id, academic_title=academic_title, name_surname=name_surname, date_of_birth=date_of_birth, bsc=bsc,bsc_grad_institute=bsc_grad_institute, bsc_year=bsc_year, msc=msc, msc_grad_institute=msc_grad_institute,msc_year=msc_year,phd=phd,phd_grad_institute=phd_grad_institute,phd_year=phd_year, phone=phone, email=email, university=university, additional_degree=additional_degree )
 
-    print("aee ok")
+    print("Professor", i)
     
 
 

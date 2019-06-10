@@ -5,7 +5,7 @@ from study_program.models import StudyProgram
 from study_program.models import Committee
 
 
-workbook = xlrd.open_workbook('C:/iqa_website_test/IQA-Website-for-KMITL-master/myvenv/Scripts/iqa_web/study_program/importDataScript/data/Revisedv2 Database_ [Assessors Matching & Assesment Scheduling_ An Application for IQA System].xlsx')
+workbook = xlrd.open_workbook('study_program/importDataScript/data/Revisedv2 Database_ [Assessors Matching & Assesment Scheduling_ An Application for IQA System].xlsx')
 worksheet = workbook.sheet_by_name('CommitteeList (รายชื่อกรรมการปร')
 
 #shell()
@@ -26,6 +26,6 @@ for i in range(2, worksheet.nrows):
         professor_id_id = 1
 
     c = Committee.objects.create(code = code, year = year, assessment_level = assessment_level, profession = profession, professor_id_id = professor_id_id)
-    print("aee ok")
+    print("Committee", i)
 
 

@@ -4,7 +4,7 @@ from study_program.models import Professor
 from study_program.models import StudyProgram
 
 
-workbook = xlrd.open_workbook('C:/iqa_website_test/IQA-Website-for-KMITL-master/myvenv/Scripts/iqa_web/study_program/importDataScript/data/study_program.xlsx')
+workbook = xlrd.open_workbook('study_program/importDataScript/data/study_program.xlsx')
 worksheet = workbook.sheet_by_name('StudyProgram-Professor')
 
 #shell()
@@ -21,7 +21,7 @@ for i in range(1, worksheet.nrows):
 
 
 
-    print("aee ok")
+    print("ResponsibleProfessor", i)
     
 
 
