@@ -6,6 +6,9 @@ from study_program.models import Professor
 workbook = xlrd.open_workbook('study_program/importDataScript/data/study_program.xlsx')
 worksheet = workbook.sheet_by_name('professor')
 
+# workbook = xlrd.open_workbook('study_program/importDataScript/data/Revisedv2 Database_ [Assessors Matching & Assesment Scheduling_ An Application for IQA System].xlsx')
+# worksheet = workbook.sheet_by_name('Professor (อาจารย์)')
+
 #shell()
 #exec(open('C:/iqa_website_test/IQA-Website-for-KMITL-master/myvenv/Scripts/iqa_web/study_program/importDataScript/createProfessorScript.py',encoding="utf8").read())
 
@@ -15,10 +18,11 @@ for i in range(1, worksheet.nrows):
     professor_id = worksheet.row(i)[1].value
     academic_title = worksheet.row(i)[2].value
     name_surname = worksheet.row(i)[3].value
-    if(worksheet.row(i)[4].value == ''):
-        date_of_birth = "1999-11-11"
-    else:
-        date_of_bith = worksheet.row(i)[4].value
+    date_of_birth = "1999-11-11"
+    # if(worksheet.row(i)[4].value == ''):
+    #     date_of_birth = "1999-11-11"
+    # else:
+    #     date_of_bith = worksheet.row(i)[4].value
    
     bsc = worksheet.row(i)[5].value
     bsc_grad_institute = worksheet.row(i)[6].value

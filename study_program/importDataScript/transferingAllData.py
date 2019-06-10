@@ -11,5 +11,5 @@ exec(open('study_program/importDataScript/createAssessmentResult.py',encoding="u
 exec(open('study_program/importDataScript/createAUNResult.py',encoding="utf8").read())
 exec(open('study_program/importDataScript/createCommittee.py',encoding="utf8").read())
 exec(open('study_program/importDataScript/createCommitteeAssessment.py',encoding="utf8").read())
-exec(open('study_program/importDataScript/createAssessmentCommittee.py',encoding="utf8").read())
+# exec(open('study_program/importDataScript/createAssessmentCommittee.py',encoding="utf8").read())
 exec(open('study_program/importDataScript/createUser.py',encoding="utf8").read())

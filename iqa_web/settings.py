@@ -91,7 +91,7 @@ WSGI_APPLICATION = 'iqa_web.wsgi.application'
 #        #'NAME': os.path.join(BASE_DIR, 'db.sqlite3.4'),
 
 #        'ENGINE': 'django.db.backends.postgresql',
-#        'NAME': 'presentationTake1',
+#        'NAME': 'presentationTake3',
 #        'USER':'postgres',
 #        'PASSWORD':'1234',
 #        'HOST':'localhost',
