@@ -100,14 +100,14 @@ WSGI_APPLICATION = 'iqa_web.wsgi.application'
 # }
 
 DATABASES = {
-    #iqa
+    #iqa2
     'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'de235c0eh81fbj', 
-            'USER':'rmgzwpkekkxesd',
-            'PASSWORD':'82de29e44fe3de7db04e31599759efc3f423402cde386781c76a194f865fab3f',
-            'HOST':'ec2-54-247-72-30.eu-west-1.compute.amazonaws.com',
-            'PORT':5432
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'ddkqqih80igv6h',
+        'USER': 'zvkjvvinvojvaw',
+        'PASSWORD': '244ca8b97b16a739cb8125efe5b0a21505218798eb42074f71f4240d18d6fa7e',
+        'HOST': 'ec2-54-228-252-67.eu-west-1.compute.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
